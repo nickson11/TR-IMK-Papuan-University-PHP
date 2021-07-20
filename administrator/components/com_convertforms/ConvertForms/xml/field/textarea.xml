@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="basic">
+        <field name="textareaheight" type="nrnumber"
+        	label="COM_CONVERTFORMS_TEXTAREA_HEIGHT"
+        	description="COM_CONVERTFORMS_TEXTAREA_HEIGHT_DESC"
+        	addon="rows"
+        	default="3"
+        	min="1"
+        	class="input-mini"
+        />
+    </fieldset>
+	<fieldset name="advanced">
+        <field name="filter" type="list"
+            label="COM_CONVERTFORMS_FIELD_FILTER"
+            description="COM_CONVERTFORMS_FIELD_FILTER_DESC"
+            class="input-small"
+            default="html">
+            	<option value="safehtml">JLIB_FILTER_PARAMS_SAFEHTML</option>
+            	<option value="html">JLIB_FILTER_PARAMS_TEXT</option>
+            	<option value="raw">JLIB_FILTER_PARAMS_RAW</option>
+            	<option value="alnum">JLIB_FILTER_PARAMS_ALNUM</option>
+            	<option value="word">Word</option>
+            	<option value="integer">JLIB_FILTER_PARAMS_INTEGER</option>
+            	<option value="float">JLIB_FILTER_PARAMS_FLOAT</option>
+        </field>
+	</fieldset>
+</form>

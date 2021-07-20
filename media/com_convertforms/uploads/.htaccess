@@ -1,0 +1,15 @@
+
+			# Turn off all options we don't need.
+			Options None
+			Options +FollowSymLinks
+
+			# Disable the PHP engine entirely.
+			<IfModule mod_php5.c>
+				php_flag engine off
+			</IfModule>
+
+			# Block direct PHP access
+			<Files *.php>
+				deny from all
+			</Files>
+		
